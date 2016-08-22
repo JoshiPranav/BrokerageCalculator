@@ -1,0 +1,103 @@
+/*****************************************************************************************************
+ ** Tags
+ *****************************************************************************************************/
+body {
+    font-family: arial;
+    font-size: 12px; 
+    font-size: 0.75rem;     /* CSS3 */
+    text-align: center;
+}
+h2 { font-size: 12px; font-size: 0.75rem; margin: 0; text-align: left; }
+
+
+/*****************************************************************************************************
+ ** Layout
+ *****************************************************************************************************/
+.container { position:absolute; top:50%; left:50%;  margin: -80px 0 0 -175px; width: 350px; height: 0px; } /* vertical align center*/
+.block { display: block; }
+.inline-block {
+    display: inline-block;
+    zoom:1;                 /* IE7 : inline-block */
+    *display: inline;       /* IE7 : inline-block */
+}
+
+/*****************************************************************************************************
+ ** Backgrounds
+ *****************************************************************************************************/
+.bg-primary { background-color: #4a4949; color: #fff; }
+.bg-secondary { background-color: #ededed; }
+.bg-plain { background-color: #fff; }
+
+/*****************************************************************************************************
+ ** Images
+ *****************************************************************************************************/
+.sprite { background: url('../img/sprite.png') no-repeat; }
+.sprite.icon-16 { margin: 0 auto; width: 16px; height: 16px; }
+.sprite.icon-24 { margin: 0 auto; width: 24px; height: 24px; }
+.sprite.up { background-position: 0 0; }
+.sprite.info { background-position: -24px -16px; }
+.sprite.check { background-position: 0 -16px; }
+.sprite.bg-target { background-position: 0 -120px; } 
+
+/*****************************************************************************************************
+ ** Dialogs
+ *****************************************************************************************************/
+div.dlg-container { margin-left: auto; margin-right: auto; width: 349px;  position:relative;top:50%;}
+div.dlg-container h2.dlg-header { font-weight: bold; padding: 7px 12px; }
+div.dlg-container div.dlg-body { padding: 12px 10px; text-align: center; }
+div.dlg-container div.dlg-body-content { border: 1px solid #d5d3d3; color: #626262; padding: 9px 15px 5px; }
+
+/*****************************************************************************************************
+ ** Counter
+ *****************************************************************************************************/
+div.counter-container { margin-bottom: 20px; }
+div.counter-container  .title { 
+    font-weight: bold;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+}
+div.counter-container .bar { background-color: #cecece; height: 7px; padding: 3px; text-align: left; width: 120px; }
+div.counter-container .bar-fill { background: url('../img/bg-counter-fill.png') 0 0 repeat-x; display: block; height: 7px; width: 0; }
+div.counter-container .bar-fill .stat
+{
+    float: right;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    left: 9px;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    *width: 20px;   /* IE7 */
+}
+div.counter-container .bar-fill .stat .actual { position: relative; top: -3px; }
+
+/* Target Box */
+div.target-container
+{ 
+    color: #fff;
+    left: -4px;
+    *left: -1px;    /* IE7 */
+    padding-top: 1px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    *top: 13px;     /* IE7 */
+    width: 51px;
+    height: 42px;
+}
+div.target-container .target-title { font-size: 11px; font-size: 0.6875rem; }
+div.target-container .target-body { display: block; font-size: 18px; font-size: 1.125rem; font-weight: bold; margin-top: 2px; }
+
+/* Message */
+div.brokerage-message > span {
+    display: inline-block;
+    zoom:1;                 /* IE7 : inline-block */
+    *display: inline;       /* IE7 : inline-block */
+}
+div.brokerage-message .text { position: relative; top: -6px; *top: -4px; /* IE7 */ }
+
+
+
+

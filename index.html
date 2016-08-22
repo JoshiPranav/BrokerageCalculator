@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brokerage Counter</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en-us" />
+    
+    <!-- stylesheets -->
+    <link type="text/css" href="css/site.css" rel="stylesheet" />
+    
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.targetcounter/jquery.targetcounter.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+</head>
+<body>
+
+    <!-- container to vertically center the dialog box -->
+    <div class="container">
+
+        <!-- dialog -->
+        <div class="dlg-container">
+            <h2 class="dlg-header bg-primary">Brokerage Counter</h2>
+            <div class="dlg-body bg-secondary">
+                <div class="dlg-body-content bg-plain">
+                
+                    <!-- counter (e.g. 13 => actual, 15 => target) -->
+                    <div class="counter-container" data-plugin-targetcounter="14,15">
+                        <span class="title">Brokerage:</span>
+                        
+                        <!-- counter bar -->
+                        <span class="bar inline-block">
+                            <span class="bar-fill">
+                                <span class="stat" style="display: none;">
+                                    <span class="sprite icon-16 up block"></span>
+                                    <span class="actual"></span>
+                                </span>
+                            </span>
+                        </span>
+
+                        <!-- target box -->
+                        <div class="target-container sprite bg-target inline-block">
+                            <span class="target-title">Target</span>
+                            <span class="target-body">&nbsp;</span>
+                        </div>
+                    </div>
+                    
+                    <!-- message -->
+                    <div class="brokerage-message fail" style="display: none;">
+                        <span class="sprite icon-24 info"></span>
+                        <span class="text inline-block"></span>
+                    </div>
+                    <div class="brokerage-message success" style="display: none;">
+                        <span class="sprite icon-24 check"></span>
+                        <span class="text"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
